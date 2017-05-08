@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             build: {
                 files: [{
                     src: ['scss/*.scss', 'scss/**/*.scss'],
-                    dest: 'sass/main.css'
+                    dest: 'css/main.css'
                 }]
             }
         },
@@ -51,5 +51,5 @@ module.exports = function(grunt) {
 
     //Register Tasks
     grunt.registerTask('run', ['concat', 'sass']);
-    grunt.registerTask('server', ['watch', 'express']);
+    grunt.registerTask('server', ['watch', 'sass']);
 };
